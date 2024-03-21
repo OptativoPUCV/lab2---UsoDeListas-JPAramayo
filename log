@@ -1,0 +1,12 @@
+Thu 21 Mar 2024 03:02:38 PM UTC: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:50:5: error: implicit declaration of function ‘push_back’; did you mean ‘pushBack’? [-Werror=implicit-function-declaration]
+   50 |     push_back(L, elemento);
+      |     ^~~~~~~~~
+      |     pushBack
+cc1: all warnings being treated as errors
+Compilation failed
+f97b78a
