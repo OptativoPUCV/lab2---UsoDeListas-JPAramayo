@@ -89,6 +89,20 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
+
+  Stack* copiaInv = create_stack()
+  
+  //copia invertida
+  while (top(P1) != NULL) {
+    push(copiaInv, top(P1));
+    pop(P1);
+  }
+
+  //revertir copia
+  while (top(copiaInv) != NULL) {
+    push(P2, top(copiaInv))
+    pop(copiaInv);
+  }
 }
 
 /*

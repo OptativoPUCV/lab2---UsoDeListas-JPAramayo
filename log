@@ -22,3 +22,19 @@ Fri 22 Mar 2024 01:30:00 AM UTC:
  tests:  2|3
 total_score: 20/70
 acac979
+Fri 22 Mar 2024 01:43:22 AM UTC: 
+ exercises.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:96:3: error: expected ‘,’ or ‘;’ before ‘while’
+   96 |   while (top(P1) != NULL) {
+      |   ^~~~~
+exercises.c:103:28: error: expected ‘;’ before ‘pop’
+  103 |     push(P2, top(copiaInv))
+      |                            ^
+      |                            ;
+  104 |     pop(copiaInv);
+      |     ~~~                     
+Compilation failed
+1228d21
