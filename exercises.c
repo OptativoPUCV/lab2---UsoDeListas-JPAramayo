@@ -100,7 +100,7 @@ void copia_pila(Stack* P1, Stack* P2) {
 
   //revertir copia
   while (top(copiaInv) != NULL) {
-    push(P2, top(copiaInv))
+    push(P2, top(copiaInv));
     pop(copiaInv);
   }
 }

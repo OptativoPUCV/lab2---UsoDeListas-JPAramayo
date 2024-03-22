@@ -38,3 +38,13 @@ exercises.c:103:28: error: expected ‘;’ before ‘pop’
       |     ~~~                     
 Compilation failed
 1228d21
+Fri 22 Mar 2024 01:43:31 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:96:3: error: expected ‘,’ or ‘;’ before ‘while’
+   96 |   while (top(P1) != NULL) {
+      |   ^~~~~
+Compilation failed
+afeaa0f
