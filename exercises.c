@@ -129,8 +129,8 @@ int parentesisBalanceados(char *cadena) {
       char* topCar = (char *) top(pila);
       
       if (cadena[i] == ')' && *topCar == '(') pop(pila);
-      if (cadena[i] == ']' && *topCar == '[') pop(pila);
-      if (cadena[i] == '}' && *topCar == '{') pop(pila);
+      else if (cadena[i] == ']' && *topCar == '[') pop(pila);
+      else if (cadena[i] == '}' && *topCar == '{') pop(pila);
       else return 0;
     }
   }
