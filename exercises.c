@@ -99,14 +99,14 @@ void copia_pila(Stack* P1, Stack* P2) {
   Stack* copia1 = create_stack();
   Stack* copia2 = create_stack();
   
-  //copia invertida
+  //copias invertida
   while (top(P1) != NULL) {
     push(copia1, top(P1));
     push(copia2, top(P1));
     pop(P1);
   }
 
-  //revertir copia
+  //revertir copias
   while (top(copia1) != NULL) {
     push(P2, top(copia1));
     push(P1, top(copia1));
